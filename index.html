@@ -1,0 +1,189 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>Responsive Navigation</title>  
+  <link rel="stylesheet" href="stylesheet.css" />  
+  <!-- Font Awesome for icons -->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />  
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>  
+<body>
+    <!-- WhatsApp fixed call-to-action button -->
+    <div id="whatsapp-cta">
+        <a href="https://wa.me/+447365575801" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>&nbsp;WhatsApp
+        </a>
+    </div>
+  <!-- Navigation Container -->  
+  <nav class="navigation">  
+    <!-- Logo Image -->  
+    <div class="logo">  
+      <img src="Assest/l-logo.png" alt="Website Logo" />  
+    </div>  
+
+    <!-- Navigation Links -->  
+    <ul class="nav-links">  
+      <li><a class="scroll-link" href="#hero-section">Home</a></li>  
+      <li><a class="scroll-link" href="#sc-section">Services</a></li>  
+      <li><a class="scroll-link" href="#about-section">About Us</a></li>  
+      <li><a class="scroll-link" href="#">Reviews</a></li>  
+    </ul>  
+
+    <!-- Social Media and Toggle Button -->  
+    <div class="icons">  
+        <a href="https://www.linkedin.com/company/cabcom-dispatch/"><i class="fab fa-linkedin"></i></a>  
+        <a href="https://wa.me/+447365575801"><i class="fab fa-whatsapp"></i></a>  
+        <a href="https://web.facebook.com/profile.php?id=61577144812090"><i class="fab fa-facebook"></i></a>  
+        <button id="menu-toggle"><i class="fas fa-bars"></i></button> 
+    </div>  
+    </nav>  
+        <!-- Mobile Menu - Hidden by default -->  
+        <div class="mobile-menu" id="mobileMenu">  
+        <a class="scroll-link" href="#hero-section">Home</a>  
+        <a class="scroll-link" href="#sc-section">Services</a>  
+        <a class="scroll-link" href="#about-section">About Us</a>  
+        <a class="scroll-link" href="#">Reviews</a>  
+        </div>  
+
+  <section id="hero-section" class="hero-container">  
+        <div class="hero-text">  
+            <div class="hero-name">  
+            <span>CabCom <br />Dispatch</span>  
+            </div>  
+            <div class="hero-slogan">We Answer, You Drive</div>  
+            <div class="hero-description">  
+            <p>Professional call-handling & Dispatch <br /> support for taxi companies across the <br /> UK, US, & Australia</p>  
+            </div>  
+            <a href="domoForm.html" class="demo-link">  
+            <button class="demo-btn">Free Demo <i class="fa-solid fa-arrow-right"></i></button>  
+            </a>  
+        </div>  
+
+        <div class="hero-graphic">  
+            <img src="Assest/l-logo.png" alt="Hero Logo" />  
+        </div>  
+    </section>  
+    <section id="sc-section" class="sc-container">  
+        <h2 class="main-heading">Services</h2>  
+
+        <div class="service-block">  
+            <h4 class="sb-heading">Professional <br class="mobile-br" />Despatch & Call Handling <br class="mobile-br" />Services</h4>  
+            <p class="body-text">  
+            At Cabcom Dispatch, we specialise in providing expert call handling and taxi dispatch services  
+            for private hire and taxi companies across the world. Our team consists of highly trained and  
+            experienced dispatchers and call operators who understand the fast-paced nature of the taxi industry.  
+            </p>  
+        </div>  
+
+        <div class="service-block">  
+            <h4 class="sb-heading">Extra Solution We Offer</h4>  
+            <div id="sol-boxes" class="solution-boxes">  
+            <div class="sol-item">  
+                <a href="https://wa.me/+447365575801"><i class="fa-brands fa-whatsapp"></i>  
+                <h6>WhatsApp</h6></a> 
+            </div>  
+            <div class="sol-item">  
+                <a href="mailto:taxicontroller.uk@gmail.com"><i class="fa-solid fa-envelope"></i>  
+                <h6>Email Support</h6></a>
+            </div>  
+            <div class="sol-item">  
+                <i class="fa-solid fa-browser"></i>  
+                <h6>Live Web Chat</h6>  
+            </div>  
+            <div class="sol-item">  
+                <i class="fa-solid fa-calendar-days"></i>  
+                <h6>24/7 Coverage</h6>  
+            </div>  
+            </div>  
+        </div>  
+
+        <div class="service-block">  
+            <h4 class="sb-heading">Software <br class="mobile-br" />Our Controllers Are Trained On</h4>  
+            <div id="software-imgs" class="software-logos">  
+            <img src="Assest/software (1).png" alt="Software 1" class="software-logo" />  
+            <img src="Assest/software (2).png" alt="Software 2" class="software-logo" />  
+            <img src="Assest/software (3).png" alt="Software 3" class="software-logo" />  
+            <img src="Assest/software (4).png" alt="Software 4" class="software-logo" />  
+            <img src="Assest/software (5).png" alt="Software 5" class="software-logo" />  
+            </div>  
+        </div>  
+    </section>  
+    <section id="about-section" class="about-container">  
+        <h2 class="main-heading">About Us</h2>  
+
+        <div class="about-content">  
+            <div class="about-text">  
+            <p>  
+                At Cabcom Dispatch, we specialise in providing expert call handling and taxi dispatch services  
+                for private hire and taxi companies across the world. Our team consists of highly trained and  
+                experienced dispatchers and call operators who understand the fast-paced nature of the taxi industry.  
+            </p>  
+
+            <p>  
+                Our team is trained on leading UK taxi dispatch software, including iCabbi and Autocab.  
+                We pride ourselves on delivering accurate, friendly, and efficient service with every call.  
+                Whether it’s taking bookings, managing school runs, or supporting night shifts, our controllers  
+                work as an extension of your business.  
+            </p>  
+
+            <p>  
+                We know how important reliability is in this industry. That’s why we offer dependable support,  
+                tailored to your company’s needs — helping you reduce missed calls, increase bookings,  
+                and provide a better experience for your customers.  
+            </p>  
+
+            <h4 class="tagline">We’re more than a service — we’re your dispatch partner.</h4>  
+            </div>  
+
+            <div class="about-image">  
+            <img src="Assest/graphic.png" alt="About Graphic" class="responsive-img" />  
+            </div>  
+        </div>  
+    </section>  
+    <!-- Footer Section -->  
+    <footer class="site-footer">  
+        <div class="footer-container">  
+            <!-- Logo and Tagline -->  
+            <div class="footer-brand">  
+            <img src="Assest/l-logo.png" alt="CabCom Logo" class="footer-logo" />  
+            <p class="tagline">We Answer, You Drive</p>  
+            </div>  
+
+            <!-- Quick Navigation Links -->  
+            <div class="footer-links">  
+            <h4>Quick Links</h4>  
+            <ul>  
+                <li><a class="scroll-link" href="#hero-section">Home</a></li>  
+                <li><a class="scroll-link" href="#sc-section">Services</a></li>  
+                <li><a class="scroll-link" href="#about-section">About Us</a></li>  
+                <li><a class="scroll-link" href="#">Reviews</a></li>  
+            </ul>  
+            </div>  
+
+            <!-- Contact and Socials -->  
+            <div class="footer-contact">  
+            <h4>Contact Us</h4>  
+            <p>Email: support@cabcomdispatch.com</p>  
+            <p>Phone: +44 7365 575801</p>  
+            <div class="footer-socials">  
+                <a href="https://www.linkedin.com/company/cabcom-dispatch/"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="https://wa.me/+447365575801"><i class="fab fa-whatsapp"></i></a>  
+                <a href="https://web.facebook.com/profile.php?id=61577144812090"><i class="fab fa-facebook-f"></i></a>
+            </div>  
+            </div>  
+        </div>  
+
+        <!-- Bottom Line -->  
+        <div class="footer-bottom">  
+            <p>&copy; 2025 CabCom Dispatch. All rights reserved.</p>  
+        </div>  
+    </footer>  
+
+
+
+    <script src="script.js"></script>  
+</body>  
+</html>  

@@ -1,0 +1,79 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Form</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="formstylesheet.css">
+</head>
+<body class="d-flex">
+    <!-- Container for the form and graphic -->
+    <section id="form-container" class="d-flex">
+        <!-- Graphic and navigation section -->
+        <div class="graphic d-flex">
+            <img src="Assest/d-logo.png" alt="Company Logo" height="80%">
+            <a href="index.html"><button class="back-btn">Go Back</button></a>
+        </div>
+
+        <!-- Main form container -->
+        <div class="demo-form d-flex">
+            <form action="https://formspree.io/f/xqabnqjo" method="POST" class="d-flex form-animated">
+                <h2 class="title d-flex">Request a Free Demo</h2>
+
+                <div>
+                    <h4>First Name</h4>
+                    <input type="text" name="f-name" required placeholder="First Name">
+                </div>
+
+                <div>
+                    <h4>Last Name</h4>
+                    <input type="text" name="l-name" required placeholder="Last Name">
+                </div>
+
+                <div>
+                    <h4>Email Address</h4>
+                    <input type="email" name="email" required placeholder="Enter Your Email">
+                </div>
+
+                <div>
+                    <h4>Contact Number</h4>
+                    <input id="customInput" type="text" name="contact" required placeholder="+xxx xxxx-xxx-x">
+                </div>
+
+                <div>
+                    <h4>Your Country</h4>
+                    <input type="text" name="country" required placeholder="Your Country">
+                </div>
+
+                <div>
+                    <h4>Your City</h4>
+                    <input type="text" name="city" required placeholder="Your City">
+                </div>
+
+                <!-- Textarea for user message -->
+                <div id="textArea">
+                    <label for="message"><h3>Your Message</h3></label><br>
+                    <textarea name="message" id="message" placeholder="Write Your Message Here"></textarea> 
+                </div>
+
+                <!-- Buttons for reset and submit -->
+                <div class="form-btn d-flex">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript to validate input characters -->
+    <script>
+        document.getElementById("customInput").addEventListener("input", function () {
+            // Replace all characters except allowed numbers and special characters
+            this.value = this.value.replace(/[^0-9+()\-\s]/g, '');
+        });
+    </script>   
+</body>
+</html>
