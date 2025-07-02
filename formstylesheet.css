@@ -50,7 +50,7 @@ body {
 .back-btn {
     padding: 10px 20px;
     border: none;
-    background-color: #6c63ff;
+    background-color: #00567a;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -93,7 +93,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #6c63ff;
+    border-color: #00567a;
     outline: none;
 }
 
@@ -105,7 +105,7 @@ input:focus, textarea:focus {
 
 button[type="submit"], button[type="reset"] {
     padding: 10px 25px;
-    background-color: #6c63ff;
+    background-color: #00567a;
     border: none;
     color: white;
     font-size: 16px;
@@ -115,7 +115,7 @@ button[type="submit"], button[type="reset"] {
 }
 
 button[type="submit"]:hover, button[type="reset"]:hover {
-    background-color: #5548d9;
+    background-color: #0d1b2ad5;
 }
 
 /* Responsive styles for mobile devices */
