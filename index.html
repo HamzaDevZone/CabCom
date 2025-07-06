@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <title>CabCom Dispatch</title>  
-  <link rel="stylesheet" href="stylesheet.css" />  
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Tag bar Icon -->
+  <link rel="icon" href="Assest/d-bar-logo.png" type="image/x-icon"/> 
   <!-- Font Awesome for icons -->  
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -28,8 +30,9 @@
     <ul class="nav-links">  
       <li><a class="scroll-link" href="#hero-section">Home</a></li>  
       <li><a class="scroll-link" href="#sc-section">Services</a></li>  
-      <li><a class="scroll-link" href="#about-section">About Us</a></li>  
       <li><a class="scroll-link" href="#">Reviews</a></li>  
+      <li><a class="scroll-link" href="#key-benefits">Key Benefits</a></li>  
+      <li><a class="scroll-link" href="#about-section">About Us</a></li>  
     </ul>  
 
     <!-- Social Media and Toggle Button -->  
@@ -44,8 +47,9 @@
         <div class="mobile-menu" id="mobileMenu">  
         <a class="scroll-link" href="#hero-section">Home</a>  
         <a class="scroll-link" href="#sc-section">Services</a>  
-        <a class="scroll-link" href="#about-section">About Us</a>  
         <a class="scroll-link" href="#">Reviews</a>  
+        <a class="scroll-link" href="#key-benefits">Key Benefits</a>  
+        <a class="scroll-link" href="#about-section">About Us</a>  
         </div>  
 
   <section id="hero-section" class="hero-container">  
@@ -55,15 +59,19 @@
             </div>  
             <div class="hero-slogan">We Answer, You Drive</div>  
             <div class="hero-description">  
-            <p>Professional call-handling & Dispatch <br /> support for taxi companies across the <br /> UK, US, & Australia</p>  
+                <p>Professional call-handling & Dispatch <br /> support for taxi companies across the <br /> UK, US, & Australia</p>  
             </div>  
             <a href="domoForm.html" class="demo-link">  
-            <button class="demo-btn">Free Demo <i class="fa-solid fa-arrow-right"></i></button>  
+                <button class="demo-btn">Free Demo <i class="fa-solid fa-arrow-right"></i></button>  
             </a>  
         </div>  
-
+        
         <div class="hero-graphic">  
             <img src="Assest/l-logo.png" alt="Hero Logo" />  
+        </div>  
+        <div class="stats-wrapper">  
+            <div class="stat-box"><span>7+</span> <p>Years Experience</p> </div>  
+            <div class="stat-box"><span>5+</span> <p>Clients</p></div>  
         </div>  
     </section>  
     <section id="sc-section" class="sc-container">  
@@ -135,7 +143,7 @@
                 and provide a better experience for your customers.  
             </p>  
 
-            <h4 class="tagline">We’re more than a service — we’re your dispatch partner.</h4>  
+            <h4 class="tagline">We’re not just the service provider — we’re your dispatch partner.</h4>  
             </div>  
 
             <div class="about-image">  
@@ -143,6 +151,54 @@
             </div>  
         </div>  
     </section>  
+    <section id="key-benefits" class="keybenefits-section">  
+        <h2 class="main-heading">Key Benefits</h2>  
+        <h2 class="tagline">Where Taxi Firms Go To Grow?</h2>  
+        <div class="keybenefits-container">  
+            <div class="keybenefits-box">  
+                <i class="fa-solid fa-calendar-days"></i>
+                <h3>24/7 Customer Support
+                </h3>  
+                <p>We're here whenever you need us — day or night — providing responsive assistance and dependable coverage around the clock.
+                </p>  
+            </div>  
+            <div class="keybenefits-box bg-color">  
+                <i class="fa-solid fa-sack-dollar"></i>
+                <h3>Cost-Effective Solutions
+                </h3>  
+                <p>Save up to 70–80% on staffing costs while maintaining the quality and professionalism your customers expect.
+                </p>  
+            </div>  
+            <div class="keybenefits-box">  
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Trained Agents. Trusted Results.
+                </h3>  
+                <p>Our experienced call handlers are trained to deliver smooth, confident service with every interaction.
+                </p>  
+            </div>  
+            <div class="keybenefits-box bg-color">  
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <h3>Flexible & Scalable Services
+                </h3>  
+                <p>From single-operator setups to full-shift coverage, our services grow with your needs — offering the right support at every stage.
+                </p>  
+            </div>  
+            <div class="keybenefits-box">  
+                <i class="fa-solid fa-shield-keyhole"></i>
+                <h3>Secure Data Handling
+                </h3>  
+                <p>We take data protection seriously. All client and customer information is managed with strict confidentiality, secure systems, and limited access — ensuring your business stays protected at every level.
+                </p>  
+            </div>  
+            <div class="keybenefits-box bg-color">  
+                <i class="fa-solid fa-taxi"></i>
+                <h3>Deep Understanding of the Taxi Industry
+                </h3>  
+                <p>We know the UK taxi business inside out. Our agents are trained in local area knowledge, we’re already fluent. With Cabcom Dispatch, you're working with a team that understands your world, not just the calls.</p>  
+            </div>  
+        </div>  
+    </section>  
+    
     <!-- Footer Section -->  
     <footer class="site-footer">  
         <div class="footer-container">  
@@ -158,16 +214,17 @@
             <ul>  
                 <li><a class="scroll-link" href="#hero-section">Home</a></li>  
                 <li><a class="scroll-link" href="#sc-section">Services</a></li>  
-                <li><a class="scroll-link" href="#about-section">About Us</a></li>  
                 <li><a class="scroll-link" href="#">Reviews</a></li>  
+                <li><a class="scroll-link" href="#key-benefits">Key Benefits</a></li>  
+                <li><a class="scroll-link" href="#about-section">About Us</a></li>  
             </ul>  
             </div>  
 
             <!-- Contact and Socials -->  
             <div class="footer-contact">  
             <h4>Contact Us</h4>  
-            <p><b>Address: &nbsp;</b>Khalid Plaza, 204A, Basement, Main Road, Gulzar-e-Qaid, Rawalpindi</p>
-            <p><b>Email: &nbsp;</b><a href="mailto:taxicontroller.uk@gmail.com">taxicontroller.uk@gmail.com</a></p>  
+            <p><b>Address: &nbsp;</b>Khalid Plaza, 204A, Basement, Main Road, Gulzar-e-Quaid, Rawalpindi</p>
+            <p><b>Email: &nbsp;</b><a href="mailto:taxicontroller.uk@gmail.com">info@cabcomdispatch.com</a></p>  
             <p><b>Phone: &nbsp;</b>+44 7365 575801</p>  
             <div class="footer-socials">  
                 <a href="https://www.linkedin.com/company/cabcom-dispatch/"><i class="fab fa-linkedin-in"></i></a>  
