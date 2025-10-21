@@ -1,0 +1,133 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #0d1b2a;
+    color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    color: #f8f9fa;
+    max-width: 800px;
+}
+
+.header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.header p {
+    font-size: 18px;
+    color: #cfd8e3;
+    margin-top: 10px;
+}
+
+/* Main content area */
+.policy-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.policy-card {
+    background: white;
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 40px;
+    line-height: 1.8;
+    color: #0d1b2a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings and paragraphs */
+.policy-card h2 {
+    font-size: 22px;
+    margin-top: 25px;
+    color: #0d1b2a;
+}
+
+.policy-card p {
+    margin-top: 10px;
+    color: #0d1b2a;
+}
+
+.policy-card ul {
+    margin: 10px 0 20px 25px;
+    color: #0d1b2a;
+}
+
+.policy-card li {
+    margin-bottom: 8px;
+}
+
+/* Button styling */
+.btn-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-btn {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #0096c7, #48cae4);
+}
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .policy-card {
+        padding: 25px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+}
